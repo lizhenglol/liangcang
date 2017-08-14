@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<Link rel="shortcut icon" href="img/favicon.ico">
+		
+		<style type="text/css">
+			*{margin: 0;padding: 0;font-family: "微软雅黑";}
+			#outh{
+				width: 100%;
+				background: #999999;
+			}
+			#center{
+				width: 600px;
+				height: 640px;
+				margin: 0 auto;
+				
+			}
+			.center_logo{
+				width: 560px;
+				height: 160px;
+				
+				padding-top:20px ;
+			}
+			.center_logo img{
+				margin-left: 172px;
+			}
+			.ceter_mobile{
+				height: 50px;
+				font-weight: bold;
+				color: #fff;
+				font-size: 16px;
+				
+			}
+			.ceter_mobile div{
+				float: left;
+				width: 70px;
+				height: 50px;
+				
+				line-height: 50px;
+				margin-left:30px;
+
+				
+			}
+			.ceter_mobile input{
+				width: 290px;
+				height: 50px;
+				margin-left:30px;
+				padding-left: 30px;
+				font-size:16px;
+				color: #fff;
+				background: #CBCBCB;
+				
+				border: 0;
+				outline: none;
+			}
+			.ceter_code,.ceter_psw2,.ceter_psw{
+				height: 50px;
+				font-weight: bold;
+				color: #fff;
+				font-size: 16px;
+				margin-top: 10px;
+				
+			}
+			.ceter_code div{
+				float: left;
+				width: 70px;
+				height: 50px;
+
+				line-height: 50px;
+				margin-left:30px;
+
+				
+			}
+			.ceter_code input{
+				width: 290px;
+				height: 50px;
+				margin-left:30px;
+				padding-left: 30px;
+				font-size:16px;
+				color: #fff;
+				background: #CBCBCB;
+				
+				border: 0;
+				outline: none;
+			}
+			.ceter_psw .tit{
+				float: left;
+				width: 70px;
+				height: 50px;
+
+				line-height: 50px;
+				margin-left:30px;
+
+				
+			}
+			.ceter_psw input{
+				float: left;
+				width: 290px;
+				height: 50px;
+				margin-left:30px;
+				padding-left: 30px;
+				font-size:16px;
+				color: #fff;
+				background: #CBCBCB;
+				
+				border: 0;
+				outline: none;
+			}
+			.ceter_psw2 div{
+				float: left;
+				width: 70px;
+				height: 50px;
+
+				line-height: 50px;
+				margin-left:30px;
+
+				
+			}
+			.ceter_psw2 input{
+				width: 290px;
+				height: 50px;
+				margin-left:30px;
+				padding-left: 30px;
+				font-size:16px;
+				color: #fff;
+				background: #CBCBCB;
+				
+				border: 0;
+				outline: none;
+			}
+			.center_check{
+				font-size: 12px;
+				width: 300px;
+				height: 40px;
+				margin-left: 130px;
+				margin-top: 30px;
+			}
+			#checkbox{vertical-align: middle;}
+			.center_check span{
+				vertical-align: middle;
+			}
+			.center_check span a{
+				cursor: pointer;
+				color: blue;
+			}
+			.center_button{
+				width: 320px;
+				height: 50px;
+				margin-top: 20px;
+				margin-left: 130px;
+				
+			}
+			#button{
+				width: 320px;
+				height: 50px;
+				background: #25292e;
+				text-align: center;
+				line-height: 50px;
+				border-radius: 5px;
+				font-size: 18px;
+				color: white;
+				outline: none;
+				cursor: pointer;
+				border:0;
+				font-weight: bolder;
+
+			}
+			.center_more{
+				width: 320px;
+				height: 50px;
+				margin-top: 20px;
+				margin-left: 130px;
+			}
+			.more_logo{
+				width: 36px;
+				height: 36px;
+			    float: left;
+			    margin-left: 10px;
+			    cursor: pointer;
+				
+			}
+			#logo1{
+				background: url(img/qqnormal.png) no-repeat;
+			}
+			#logo2{
+				background: url(img/xinlangnormal.png)no-repeat;
+			}
+			#logo3{
+				background: url(img/doubannormal.png)no-repeat;
+			}
+			#logo4{
+				background: url(img/tengxunnormal.png)no-repeat;
+			}
+			#logo1:hover{
+				background: url(img/qqmouse.png) no-repeat;
+			}
+			#logo2:hover{
+				background: url(img/xinlangmouse.png)no-repeat;
+			}
+			#logo3:hover{
+				background: url(img/doubanmouse.png)no-repeat;
+			}
+			#logo4:hover{
+				background: url(img/tengxunmouse.png)no-repeat;
+			}
+			.login{
+				float: right;
+				
+				height:20px ;
+				border-bottom: 3px solid white;
+				font-size: 14px;
+				font-weight: bold;
+				color: white;
+			}
+			.alert{
+				color: orangered;
+				font-size: 14px;
+				display: none;
+			}
+			.alert2{
+				color: orangered;
+				font-size: 14px;
+				display: none;
+			}
+			.strength1{
+				float: left;
+				margin-left: 10px;
+				margin-top: 20px;
+				font-size: 12px;
+			}
+			.strength1_1,.strength1_2,.strength1_3{
+				width: 40px;
+				height: 10px;
+				border: 1px solid black;
+				background: white;
+			}
+			.strength2{
+				float: left;
+				margin-top: 20px;
+				font-size: 12px;
+			}
+			.strength3{
+				float: left;
+				margin-top: 20px;
+				font-size: 12px;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div id="outh">
+			<div id="center">
+
+					
+					
+				
+				<div class="center_logo">
+					<img src="http://www.iliangcang.com/images/default/logo_icon.png"/>
+				</div>
+				<!--<form action="zhuce.php" method="post">-->
+				
+				<div class="ceter_mobile">
+					<div>手机号</div>
+					<input name="mobile" type="text" id="mobile" placeholder="请输入手机号码" value="" />
+					<span class="alert">请输入正确的手机号码</span>
+				</div>
+				<div class="ceter_code">
+					<div>用户名</div>
+					<input name="username" type="text" id="username" placeholder="3-20位字母数字下滑线" value="" />
+				</div>
+				<div class="ceter_psw">
+					<div class="tit">创建密码</div>
+					<input name="password" type="password" id="psw" placeholder="6—20位字符组成,区分大小写" value="" />
+				    <div class="strength1">
+				    	<div class="strength1_1">
+				    		
+				    	</div>
+				    	弱
+				    </div>  
+				    <div class="strength2">
+				    	<div class="strength1_2">
+				    		
+				    	</div>
+				    	中
+				    </div>   
+				    <div class="strength3">
+				    	<div class="strength1_3">
+				    		
+				    	</div>
+				    	强
+				    </div> 
+				</div>
+				<div class="ceter_psw2">
+					<div>密码确认</div>
+					<input name="" type="password" id="psw2" placeholder="确认密码" value="" />
+				    <span class="alert2">两次输入密码不一致</span>
+				</div>
+				<div class="center_check">
+					<input type="checkbox" name="" id="checkbox" value="" />
+					<span>
+						同意<a>良仓注册条款</a>
+					</span>
+				</div>
+				
+				<div class="center_button">
+					<input type="submit" name="" id="button" value="立即注册" />
+					
+				</div>
+				<!--</form>-->
+				<div class="center_more">
+					<div class="more_logo" id="logo1" href="#" title="QQ"></div>
+					<div class="more_logo" id="logo2" href="#" title="新浪微博"></div>
+					<div class="more_logo" id="logo3" href="#" title="豆瓣"></div>
+					<div class="more_logo" id="logo4" href="#" title="腾讯微博"></div>
+					<a href="denglu.html"><div class="login">
+						登录良仓
+					</div></a>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$("#mobile").blur(function(){
+			if(this.value=="" || (!/^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/.test(this.value))){
+				$(".alert").slideDown(1000);
+			}else{
+				$(".alert").slideUp(1000);
+			}
+		})
+		
+		$("#psw").blur(function(){
+            if(!/\d/.test(this.value)||!/[a-z]/i.test(this.value)){
+            	alert("密码为数字和字母组成")
+            }
+			if(/\d/.test(this.value)&&/[a-z]/i.test(this.value)){
+				$(".strength1_1").css({
+					"background":"red",
+				})
+				$(".strength1_2").css({
+					"background":"orangered",
+				})
+			}
+			if(/\d/.test(this.value)&&/[a-z]/i.test(this.value)&&/[^\u4e00-\u9fa5a-zA-Z0-9]/i.test(this.value)){
+				$(".strength1_1").css({
+					"background":"red",
+				})
+				$(".strength1_2").css({
+					"background":"orangered",
+				})
+				$(".strength1_3").css({
+					"background":"orange",
+				})
+			}
+		  
+		})
+		
+	        
+		
+	</script>
+	<script src="js/zhuce.api.js" type="text/javascript" charset="utf-8"></script>
+</html>

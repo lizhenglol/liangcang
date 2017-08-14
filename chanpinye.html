@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/content.css"/>
+		<link rel="stylesheet" type="text/css" href="css/chanpinye.css"/>
+		<style type="text/css">
+			* {
+		margin: 0;
+		padding: 0;
+		font-family: "微软雅黑";
+		list-style: none;
+		}
+		.fixed{
+			position: fixed;
+			width: 100%;
+			top: -56px;
+			z-index: 999;
+			
+			
+		}
+		#header {
+			width: 100%;
+			height: 105px;
+			background: white;
+           
+
+		}
+		
+		.header_top {
+			width: 100%;
+			height: 56px;
+			background: #25292e;
+		}
+		
+		.wrap {
+			width: 1000px;
+			height: 56px;
+			margin: 0 auto;
+			position: relative;
+			z-index: 109;
+		}
+		
+		.wrap #wrap_logo {
+			float: left;
+			margin-top: 8px;
+			width: 95px;
+			height: 38px;
+			background: url(img/icon.png);
+			cursor: pointer;
+		}
+		
+		.wrap #wrap_logo:hover {
+			opacity: 0.8;
+		}
+		
+		.wrap_lite {
+			width: 300px;
+			height: 56px;
+			list-style: none;
+			float: right;
+		}
+		
+		.wrap_lite li {
+			float: left;
+			line-height: 56px;
+		}
+		
+		.li_1 {
+			color: #CCCCCC;
+			font-size: 14px;
+		}
+		
+		.li_2 {
+			color: #CCCCCC;
+			font-size: 14px;
+			margin-left: 10px;
+		}
+		
+		.li_3 {
+			width: 1px;
+			height: 8px;
+			margin-top: 25px;
+			background: #525961;
+			margin-left: 15px;
+		}
+		
+		.li_4 {
+			text-align: center;
+			width: 66px;
+			height: 56px;
+			font-size: 12px;
+			color: #666;
+			cursor: pointer;
+		}
+		
+		.li_5 {
+			width: 1px;
+			height: 8px;
+			margin-top: 25px;
+			background: #525961;
+		}
+		
+		.li_6 {
+			cursor: pointer;
+			text-align: center;
+			width: 50px;
+			height: 56px;
+			font-size: 12px;
+			color: #666;
+		}
+		
+		.li_8 {
+			margin-left: 15px;
+			font-size: 12px;
+			color: #666;
+			cursor: pointer;
+		}
+		
+		.li_7 {
+			width: 1px;
+			height: 8px;
+			margin-top: 25px;
+			background: #525961;
+		}
+		
+		#li_4_shop {
+			width: 300px;
+			height: 120px;
+			background: #292F34;
+			position: absolute;
+			right: 0;
+			display: none;
+			color: #CCCCCC;
+			line-height: 70px;
+			text-align: center;
+			font-size: 14px;
+		}
+		
+		#shopadd {
+			width: 300px;
+			height: 50px;
+			background: #7DBFDE;
+			position: absolute;
+			bottom: 0;
+			line-height: 50px;
+			text-align: center;
+			font-size: 14px;
+			color: white;
+			cursor: pointer;
+		}
+		
+		#shopadd:hover {
+			background: #96C8E0;
+		}
+		
+		.li_6info {
+			width: 210px;
+			height: 300px;
+			background: #292F34;
+			position: absolute;
+			right: 0;
+			display: none;
+		}
+		
+		.li_6info li {
+			color: #CCCCCC;
+			width: 180px;
+			height: 49px;
+			margin-left: 15px;
+			list-style: none;
+			border-bottom: 1px solid #525961;
+			text-align: left;
+			cursor: pointer;
+		}
+		
+		.li_6info li a {
+			float: right;
+		}
+		
+		.li_6info .cover:hover {
+			background: #2E353D;
+		}
+		
+		.cover {
+			width: 210px;
+			height: 49px;
+		}
+		
+		.li_8:hover {
+			color: #CCCCCC;
+		}
+		
+		#herder_tit {
+			width: 1000px;
+			height: 49px;
+			margin: 0 auto;
+			background: white;
+			border-bottom: 4px solid #ededed;
+		}
+		
+		.header_title_f1 {
+			float: left;
+			width: 730px;
+			height: 53px;
+			color: #292F34;
+			font-size: 14px;
+		}
+		
+		.header_title_f1 li {
+			list-style: none;
+			float: left;
+			width: 128px;
+			line-height: 50px;
+			
+		}
+		
+		.f1_title_1 {
+			margin-left: 30px;
+			text-align: center;
+		}
+		
+		.header_title_f2 {
+			width: 1000px;
+            float: left;
+		}
+		
+		.header_title_f2 li {
+			list-style: none;
+			width: 1000px;
+			position: absolute;
+			z-index: 100;
+			background: white;
+			display: none;
+			margin-top: -2px;
+		}
+		
+		.f1_title {
+			border-bottom: 4px solid #292F34;
+		}
+		
+		#f2_zazhi {
+			width: 1000px;
+			height: 80px;
+			background: white;
+			margin-top: 50px;
+			font-size: 14px;
+		}
+		
+		#f2_zazhi div {
+			float: left;
+			list-style: none;
+			width: 100px;
+			height: 50px;
+			color: black;
+		}
+		
+		.center_search {
+			float: right;
+			width: 260px;
+			height: 55px;
+			overflow: hidden;
+			position: relative;
+		}
+		
+		.search {
+			width: 260px;
+			height: 49px;
+			position: absolute;
+			left: 280px;
+			border-bottom: 4px solid #292F34;
+			
+		}
+		@keyframes ss{
+			20%{margin-left: 10px;}
+			40%{margin-left: 0px;}
+			60%{margin-left: 10px;}
+			80%{margin-left: 0px;}
+			100%{margin-left: 10px;}
+		}
+		#search_input {
+			position: absolute;
+			left: 4px;
+			top: 10px;
+			width: 188px;
+			height: 30px;
+			line-height: 30px;
+			padding-left: 4px;
+			outline: none;
+			border: 0;
+		}
+		
+		#search_logo {
+			width: 50px;
+			height: 40px;
+			top: 5px;
+			position: absolute;
+			right: 0;
+			background: white;
+			background: url(img/icon.png)no-repeat -167px -145px;
+			cursor: pointer;
+			z-index: 10;
+		}
+		#f2_shop{
+			position: relative;
+			width: 1000px;
+			height: 460px;
+			background: white;
+			padding-top: 30px;
+			
+		}
+		#f2_shop_logo{
+			width: 720px;
+			height: 230px;
+			float: left;
+		}
+		.f2_shop_logo_img{
+			cursor: pointer;
+			color: #4D4D4D;
+			width: 100px;
+			height: 80px;
+			font-size: 14px;
+			font-weight:bold ;
+			float: left;
+		}
+		.f2_shop_logo_img img{
+			width: 40px;
+			height: 40px;
+		}
+		.f2_shop_logo_img p{
+			margin-top: -5px;
+			margin-left: 5px;
+		}
+		#f2_magazine{
+			float: left;
+			width: 230px;
+			height: 300px;
+			
+
+		}
+		#f2_magazine_bck{
+			width: 240px;
+			height: 235px;
+			background: #EDEDED;
+
+			
+		}
+		#f2_magazine_bck img{
+			width: 240px;
+			height: 235px;
+			cursor: pointer;
+		}
+		#f2_magazine p{
+			color: #4D4D4D;
+			font-size: 14px;
+			margin-top: 30px;
+		}
+		#f2_new{
+			width: 1000px;
+			height: 50px;
+			position: absolute;
+			bottom: 50px;
+			color: #4D4D4D;
+			font-size:14px ;
+
+		}
+		#f2_shop a{
+			cursor: pointer;
+		}
+		.li_2info{
+			width: 190px;
+			height: 165px;
+			position: absolute;
+
+			top: 56px;
+			background: #292F34;
+			display: none;
+		}
+		.cover2{
+			width: 190px;
+			height:40px;
+		}
+		.li_2info li{
+			width: 160px;
+			height:40px;
+			margin-left: 15px;
+			list-style: none;
+			font-size: 12px;
+			color: #CCCCCC;
+			border-bottom: 1px solid #525961;
+			text-align: left;
+			cursor: pointer;
+			line-height: 40px;
+		}
+		.cover_tuichu{
+			width: 190px;
+			height:35px;
+			color: white;
+			line-height: 35px;
+			font-size: 14px;
+			margin-top: 10px;
+			text-align: center;
+		
+		   
+		
+			
+		}
+		
+		.li_2info .cover2:hover {
+			background: #2E353D;
+		}
+		.li_2info .cover_tuichu:hover {
+			background: #2E353D;
+		}
+		.user_img img{
+			width: 30px;
+			height: 30px;
+			margin-top: 14px;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<div class="header_top">
+				<div class="wrap">
+					<div id="wrap_logo">
+						
+					</div>
+					<ul class="wrap_lite">
+						<div id="dengdubox">
+							
+						<li class="li_1"><div class="user_img"><a style="color: #ccc;text-decoration: none;" href="denglu.html" id="dese_href">登录</a></div>
+						<ul class="li_2info">
+						 	<div class="cover2">
+						 	<li>个人设置</li>	
+						 	</div>
+						 	<div class="cover2">
+						 	<li>收货信息</li>	
+						 	</div>
+						 	<div class="cover2">
+						 	<li style="border: 0;">我的订单</li>	
+						 	</div>
+						 	<div class="cover_tuichu">
+						 	     退出
+						 	</div>
+						 
+						 </ul>
+						
+						</li>
+						 
+						 <a href="zhuce.html" id="zc_href"><li class="li_2">注册</li></a>
+						</div>
+						<li class="li_3"></li>
+						<li class="li_4">
+							购物车
+						<div id="li_4_shop">
+							你的购物车暂时没有商品
+							<div id="shopadd">
+								快去抢购良仓商品吧！
+							</div>
+						</div>
+						</li>
+						<li class="li_5"></li>
+						<li class="li_6">消息
+						 <ul class="li_6info">
+						 	<div class="cover">
+						 	<li>动态<a>0</a></li>
+						 	</div>
+						 	<div class="cover">
+						 	
+						 	<li>评论<a>0</a></li>
+						 	</div>
+						 	<div class="cover">
+						 	
+						 	<li>私信<a>0</a></li>
+						 	</div>
+						 	<div class="cover">
+						 	
+						 	<li>粉丝<a>0</a></li>
+						 	</div>
+						 	<div class="cover">
+						 	
+						 	<li>喜欢<a>0</a></li>
+						 	</div>
+						 	<div class="cover">
+						 	
+						 	<li>通知<a>0</a></li>
+						 	</div>
+						 </ul>
+						  
+						</li>
+						<li class="li_7"></li>
+						<li class="li_8">添加良品</li>
+					</ul>
+				</div>
+			</div>
+		    <div id="herder_tit">
+		    	<ul class="header_title_f1">
+		    		<li>首页</li>
+		    		<li style="text-align: center;">商店</li>
+		    		<li class="f1_title_1">杂志</li>
+		    		<li class="f1_title_1">分享</li>
+		    		<li class="f1_title_1">达人</li>
+		    		
+		    	</ul>
+		        <div class="center_search">
+		        	<span id="search_logo">
+		         			
+		         	</span>
+		         	<div class="search">
+		         		
+		         		<input type="text" id="search_input" placeholder="search.." value="" />
+		         	</div>
+		        </div>
+		    	
+                <ul class="header_title_f2">
+		    		<li></li>
+		    		<li>
+		    			<div id="f2_shop">
+		    				<div id="f2_shop_logo">
+		    					<div class="f2_shop_logo_img">
+		    						<img src="img/23687.png"/>
+		    						<p>家居</p>
+		    					</div>
+		    					<div class="f2_shop_logo_img">
+		    						<img src="img/23686.png"/>
+		    						<p>家居</p>
+		    					</div>
+		    					<div class="f2_shop_logo_img">
+		    						<img src="img/23685.png"/>
+		    						<p>家具</p>
+		    					</div>
+		    					<div class="f2_shop_logo_img">
+		    						<img src="img/23684.png"/>
+		    						<p>文具</p>
+		    					</div>
+		    					<div class="f2_shop_logo_img">
+		    						<img src="img/23683.png"/>
+		    						<p>数码</p>
+		    					</div>
+		    					<div class="f2_shop_logo_img">
+		    						<img src="img/23682.png"/>
+		    						<p>玩乐</p>
+		    					</div>
+		    					<div class="f2_shop_logo_img">
+		    						<img src="img/23681.png"/>
+		    						<p>厨卫</p>
+		    					</div>
+		    					<div class="f2_shop_logo_img">
+		    						<img src="img/23680.png"/>
+		    						<p>美食</p>
+		    					</div>
+		    					<div class="f2_shop_logo_img">
+		    						<img src="img/23679.png"/>
+		    						<p>男装</p>
+		    					</div>
+		    					<div class="f2_shop_logo_img">
+		    						<img src="img/23678.png"/>
+		    						<p>女装</p>
+		    					</div>
+		    					<div class="f2_shop_logo_img">
+		    						<img src="img/23677.png"/>
+		    						<p>童装</p>
+		    					</div>
+		    					<div class="f2_shop_logo_img">
+		    						<img src="img/23676.png"/>
+		    						<p>鞋包</p>
+		    					</div>
+		    					<div class="f2_shop_logo_img">
+		    						<img src="img/23675.png"/>
+		    						<p>配饰</p>
+		    					</div>
+		    					<div class="f2_shop_logo_img">
+		    						<img src="img/23674.png"/>
+		    						<p>骑行</p>
+		    					</div>
+		    					<div class="f2_shop_logo_img">
+		    						<img src="img/23668.png"/>
+		    						<p>图书</p>
+		    					</div>
+		    					<div class="f2_shop_logo_img">
+		    						<img src="img/23672.png"/>
+		    						<p>艺术</p>
+		    					</div>
+		    					<div class="f2_shop_logo_img">
+		    						<img src="img/23671.png"/>
+		    						<p>盆栽</p>
+		    					</div>
+		    					<div class="f2_shop_logo_img">
+		    						<img src="img/23670.png"/>
+		    						<p>推荐</p>
+		    					</div>
+		    					<div class="f2_shop_logo_img">
+		    						<img src="img/23669.png"/>
+		    						<p>礼物</p>
+		    					</div>
+		    					
+		    					
+		    				</div>
+		    			    <div id="f2_magazine">
+		    				<div id="f2_magazine_bck">
+		    					<img title="新视线：  2015年7月刊" src="img/315574.jpg"/>
+		    				</div>
+		    				<p>
+		    					新视线：  2015年7月刊
+		    				</p>
+		    			</div>
+		    			    <div id="f2_new">
+			    			   	<a>查看所有品牌>></a>
+			    			    <a style="margin-left: 50px">最新到货>></a>
+		    			    </div>
+		    			    
+		    			    
+		    			</div>
+
+		    		</li>
+		    		<li>
+		    			<div id="f2_zazhi">
+		    				<a href=><div>童趣</div></a>
+		    				<a href=><div>数码</div></a>
+		    				<a href=><div>汽车</div></a>
+		    				<a href=><div>文化</div></a>
+		    				<a href=><div>时尚</div></a>
+		    				<a href=><div>美食</div></a>
+		    				<a href=><div>建筑</div></a>
+		    				<a href=><div>空间</div></a>
+		    				<a href=><div>圈子</div></a>
+		    				<a href=><div>清单</div></a>
+		    				<a href=><div>活动</div></a>
+		    				<a href=><div>视频</div></a>
+		    			</div>
+		    			
+		    		</li>
+		    		<li>
+		    			<div id="f2_zazhi">
+		    				<a href=><div>男士</div></a>
+		    				<a href=><div>家具</div></a>
+		    				<a href=><div>数码</div></a>
+		    				<a href=><div>工具</div></a>
+		    				<a href=><div>玩具</div></a>
+		    				<a href=><div>美容</div></a>
+		    				<a href=><div>孩子</div></a>
+		    				<a href=><div>宠物</div></a>
+		    				<a href=><div>饮食</div></a>
+		    				<a href=><div>运动</div></a>
+		    				<a href=><div>文化</div></a>
+		    				<a href=><div>女士</div></a>
+		    			</div>	
+		    			
+		    		</li>
+		    		<li></li>
+		    	</ul>
+
+		    </div>
+		</div>
+		<div id="mainout">
+			<div id="main">
+				<div id="position">
+					良仓>数码>BeoPlay P2 迷你蓝牙小音箱 | 可通话便携式设计防尘防溅功能【多色可选】
+				</div>
+				
+				<div id="main_left">
+					<div id="main_left1">
+						<div id="min_box">
+						    
+						    
+						    <div id="min_Bigbox">
+						    	
+				            </div>
+						   
+							<div id="min_box1">
+								
+						        <div id="min_Fdbox">
+						    	
+						        </div>
+								<ul id="box1_ul">
+									<li class="min_box1_img1"></li>
+									<li class="min_box1_img2"></li>
+									<li class="min_box1_img3"></li>
+									<li class="min_box1_img4"></li>
+									<li class="min_box1_img5"></li>
+									<li class="min_box1_img6"></li>
+								</ul>
+							</div>
+							
+						    <div id="min_box2">
+						    	
+						    	<ul id="box2_ul">
+						    		<span id="box_button1"></span>
+						            <span id="box_button2"></span>
+									<li class="action_box_point_now" style="margin-left:0 ;"><img src="http://imgs-qn.iliangcang.com/ware/upload/orig/2/381/381814.jpg"/></li>
+									<li><img src="http://imgs-qn.iliangcang.com/ware/upload/orig/2/381/381815.jpg"/></li>
+									<li><img src="http://imgs-qn.iliangcang.com/ware/upload/orig/2/381/381816.jpg"/></li>
+									<li><img src="http://imgs-qn.iliangcang.com/ware/upload/orig/2/381/381817.jpg"/></li>
+									<li><img src="http://imgs-qn.iliangcang.com/ware/upload/orig/2/381/381818.jpg"/></li>
+									
+								</ul>
+						    </div>
+						</div>
+					    <div id="min_goods">
+					    	<div id="goods_comment">
+					    		❤ &nbsp;1778
+					    	</div>
+					    	<div id="goods_name">
+					    		B&O
+					    	</div>
+					    	<div id="goods_name2">
+					    		 BeoPlay P2 迷你蓝牙小音箱 | 可通话便携式设计防尘防溅功能【多色可选】 
+					    	</div>
+					    	<div id="goods_price">
+					    		价格&nbsp;&nbsp;:<span>￥1398元</span>
+					    	</div>
+					    	<div id="goods_mian">
+					    		<div id="mian1">免运费</div>
+					    		<div id="mian2">正品授权</div>
+
+					    	</div>
+					    	<div id="goods_Type">
+					    		<div id="type1">
+					    			颜色&nbsp;&nbsp;:
+					    		</div>
+					    		<div id="type2" class="type_img">
+					    			<img src="http://imgs-qn.iliangcang.com/ware/upload/big/2/381/381822.jpg?86545.26807704088"/>
+					    		     黑色
+					    		</div>
+					    		<div id="type3">
+					    			<img src="http://imgs-qn.iliangcang.com/ware/upload/big/2/381/381823.jpg?30623.521721706547"/>
+					    		  皇家蓝
+					    		</div>
+					    		<div id="type4">
+					    			<img src="http://imgs-qn.iliangcang.com/ware/upload/big/2/381/381825.jpg?52573.43575010585"/>
+					    		 砂岩色
+					    		</div>
+					    	</div>
+					        <div id="goods_add">
+					        	<div id="add">
+					        		数量&nbsp;&nbsp;:
+					        	</div>
+					        	
+					        	<div id="add1">
+					        		<img src="http://7qn7hi.com1.z0.glb.clouddn.com/ware/orig/2/24/24748.png"/>
+					        	</div>
+					        	<div id="add2">
+					        		1
+					        	</div>
+					        	<div id="add3">
+					        		<img src="http://7qn7hi.com1.z0.glb.clouddn.com/ware/orig/2/24/24750.png"/>
+					        	</div>
+					        </div>
+					        <div id="goods_button">
+					        	立即购买
+					        </div>
+					        <div id="goods_shopcart">
+					        	<div id="shopcart1">
+					        		<img src="img/购物车.png"/>加入购物车
+					        	</div>
+					        	<div id="shopcart2">
+					        		<img src="img/分享.png"/>分享
+					        	</div>
+					        </div>
+					    </div>
+					</div>
+				    <div class="main_Bigimg">
+					   <img src="https://img.alicdn.com/imgextra/i3/512068181/TB2D8G1nl0lpuFjSszdXXcdxFXa_!!512068181.jpg"/>
+						
+					</div>
+		            <div class="main_Bigimg">
+					<img src="https://img.alicdn.com/imgextra/i4/512068181/TB2FyJppYBmpuFjSZFAXXaQ0pXa_!!512068181.jpg"/>
+					</div>
+					<div class="main_Bigimg">
+					<img src="https://img.alicdn.com/imgextra/i2/512068181/TB2vCG8nhXkpuFjy0FiXXbUfFXa_!!512068181.jpg"/>
+					</div>
+					<div class="main_Bigimg">
+				    <img src="https://img.alicdn.com/imgextra/i4/512068181/TB2kqyPngNlpuFjy0FfXXX3CpXa_!!512068181.jpg"/>
+				    </div>
+				    <div class="main_Bigimg">
+				    <img src="https://img.alicdn.com/imgextra/i1/512068181/TB2msm6nl0kpuFjSsziXXa.oVXa_!!512068181.jpg"/>
+				    </div>
+				    <div class="main_Bigimg">
+                     <img src="https://img.alicdn.com/imgextra/i1/512068181/TB2C7i4nbXlpuFjSszfXXcSGXXa_!!512068181.jpg"/>
+				    </div>
+				    <div class="main_Bigimg">
+                     <img src="https://img.alicdn.com/imgextra/i1/512068181/TB2AmWyngJkpuFjSszcXXXfsFXa_!!512068181.jpg"/>
+				    </div>
+				    <div class="main_Bigimg">
+                     <img src="https://img.alicdn.com/imgextra/i1/512068181/TB2AmWyngJkpuFjSszcXXXfsFXa_!!512068181.jpg"/>
+				    </div>
+				    <div class="main_Bigimg">
+                     <img src="https://img.alicdn.com/imgextra/i2/512068181/TB2.lu9nl0kpuFjy1zdXXXuUVXa_!!512068181.jpg"/>
+				    </div>
+				    <div class="main_Bigimg">
+				    	<img src="https://img.alicdn.com/imgextra/i3/512068181/TB2WS2qngFkpuFjSspnXXb4qFXa_!!512068181.jpg"/>
+				    </div>
+				    <div class="main_Bigimg">
+				    	<img src="https://img.alicdn.com/imgextra/i4/512068181/TB2P.Pxnl0kpuFjSsppXXcGTXXa_!!512068181.jpg"/>
+				    </div>
+				    <div class="main_Bigimg">
+				    	<img src="https://img.alicdn.com/imgextra/i1/512068181/TB232YInb8kpuFjy0FcXXaUhpXa_!!512068181.jpg"/>
+				    </div>
+				    <div class="main_Bigimg">
+				    	<img src="https://img.alicdn.com/imgextra/i1/512068181/TB232YInb8kpuFjy0FcXXaUhpXa_!!512068181.jpg"/>
+				    </div>
+				    <div class="main_Bigimg">
+				    	<img src="https://img.alicdn.com/imgextra/i1/512068181/TB2tu1_ngxlpuFjSszgXXcJdpXa_!!512068181.jpg"/>
+				    </div>	
+                    <div id="main_writ">
+                    	<div id="writ1">
+                    		品牌简介
+                    	</div>
+                    	<div id="writ2">
+                    		Brabantia创始于1919年，源自荷兰，是脚踏式卫生桶的发明者。
+                    		Brabantia的生产工厂位于比利时，占地5500平方公尺的厂区，
+                    		每天平均产出4000个卫生桶。20多道工序，10万次测试，
+                    		以保证每个出厂的卫生桶至少一定能使用10年，所以Brabantia也敢保证10年质保。
+                            Brabantia被誉为是世界上最好的三款脚踏式垃圾桶之一。
+                    	</div>
+                    	<div id="writ3">
+                    		购物指南
+                    	</div>
+                    	<div id="writ4">
+                    		<p> - 所有商品均为正品保证。</p>
+                    		<p> - 中国大陆地区免运费，默认商家合作快递。</p>
+                    		
+                    		<p> - 蜡烛、液态品、手表等含电池产品无法空运，运输时间相较普通空运件会更久。</p>
+
+                    		<p> - 如出现产品质量问题请在签收后72小时内联系客服。</p>
+                    	</div>
+                    	<div id="shouhou">
+                    		<img style="width: 100px;height: 28px;" src="http://7qn7hi.com1.z0.glb.clouddn.com/ware/orig/2/24/24832.png"/>
+	                    	 <div id="shouhoubox">
+	                    	 	质量><br />
+	                    	 	您收到的商品本身如有破损、瑕疵，我们将视为质量问题，因拍摄图片或显示器色差导致的色彩差异问题不属于质量问题。因产品尺码为手工测量，可能存在些许误差，敬请谅解。<br />
+	                    	     <br />
+	                    	      
+	                	                 售后> <br />
+	                	                 
+			                	1、无质量问题的商品及良仓打折的商品，恕不予退换货；<br />
+			                	
+			                	2、退货说明：良仓承诺商品本身有质量问题时，在商品及吊牌、内包装完整无破损的情况下，您可以办理退货。在快递被签收后72小时内私信客服，并将破损问题拍照上传给客服，并在得到客服退货确认之日起3日内将商品寄出，同时请将快递公司和单号告知客服，由良仓承担来回运费，货款将在良仓收到货物后5个工作日内打到您的付款账户中；<br />
+			                    	
+			                	3、换货说明：良仓恕不接受出于个人主观喜好原因的换货；如果您收到的服饰配件类商品尺码不合适，良仓愿意为您提供换货，请私信客服办理换货手续。请在快递签收之日起3日内将商品寄出，并将快递公司和单号告知客服，由于尺码不合等原因造成的往返换货费用将由购买客户承担。<br />
+			                    
+			                    <br />
+	                    	    
+			                	联系客服> <br />
+			                    
+			                	客服热线：400-897-6336<br />
+			                    
+			                	客服在线时间：工作日 09:00-18:00<br />
+	                	
+	                    	 </div>
+                    	</div>
+                    </div>
+					 
+					
+
+			</div>
+				<div id="main_right">
+					<p id="main_right_header">猜你喜欢</p>
+					<div class="right1">
+						<div class="right1_img">
+							<img src="http://imgs-qn.iliangcang.com/ware/goods/big/2/257/257508.jpg"/>
+						</div>
+						<p class="p1">BeoPlay P2 迷你蓝牙小音箱 | 可通话便携式设计防尘防溅功能【多色可选】</p>
+						<p class="p2">B&O</p>
+						<p class="p3">￥1398.00</p>
+					</div>
+					<div class="right1">
+						<div class="discount">
+							<img src="http://imgs-qn.iliangcang.com/ware/promotion/icon/11.jpg"/>
+						</div>
+						<div class="right1_img">
+							<img src="http://imgs-qn.iliangcang.com/ware/goods/big/2/257/257476.jpg"/>
+						</div>
+						<p class="p1">便携式无线蓝牙音箱 | 摇滚重低音系统</p>
+						<p class="p2">Marshall</p>
+						<p class="p3">￥1988.00 <a>￥2499.00</a></p>
+					</div>
+					<div class="right1">
+						<div class="discount">
+							<img src="http://imgs-qn.iliangcang.com/ware/promotion/icon/11.jpg"/>
+						</div>
+						<div class="right1_img">
+							<img src="http://imgs-qn.iliangcang.com/ware/goods/big/2/257/257475.jpg"/>
+						</div>
+						<p class="p1">移动式无线蓝牙音箱 | 摇滚重低音 监听级别素质【两色可选】</p>
+						<p class="p2">Marshall</p>
+						<p class="p3">￥3711.00<a>￥2499.00</a></p>
+					</div>
+					<div class="right1">
+						<div class="discount">
+							<img src="http://imgs-qn.iliangcang.com/ware/promotion/icon/11.jpg"/>
+						</div>
+						<div class="right1_img">
+							<img src="http://imgs-qn.iliangcang.com/ware/goods/big/2/257/257474.jpg"/>
+						</div>
+						<p class="p1">无线蓝牙音箱 | 摇滚重低音监听级系统【多色可选】</p>
+						<p class="p2">Marshall</p>
+						<p class="p3">￥4499.00<a>￥2499.00</a></p>
+					</div>
+				</div>
+			
+		</div>
+	    </div>
+	    <div id="service">
+	    	<div id="service_our">
+	    	    <div id="hand"></div>
+	    	    <div id="our"></div>
+	    	</div>
+	        <div id="service_fore">
+	        	<div class="fore1">
+	        		<div class="fore1_img">
+	        			
+	        		</div>
+	        		<div class="fore1_writ">
+	        			<p class="writ_p1">全球精品</p>
+	        			<p class="writ_p2">Global Selections</p>
+	        		</div>
+	        	</div>
+	        	<div class="fore1">
+	        		<div class="fore1_img"  style="background: url(img/icon.png) no-repeat -153px -217px;">
+	        			
+	        		</div>
+	        		<div class="fore1_writ">
+	        			<p class="writ_p1">正品保证</p>
+	        			<p class="writ_p2">Authenticity Guaranteed</p>
+	        		</div>
+	        	</div>
+	        	<div class="fore1">
+	        		<div class="fore1_img"  style="background: url(img/icon.png) no-repeat -57px -353px;">
+	        			
+	        		</div>
+	        		<div class="fore1_writ">
+	        			<p class="writ_p1">全场包邮</p>
+	        			<p class="writ_p2">Free Delivery</p>
+	        		</div>
+	        	</div>
+	        	<div class="fore1">
+	        		<div class="fore1_img" style="background: url(img/icon.png) no-repeat -114px -353px;">
+	        			
+	        		</div>
+	        		<div class="fore1_writ">
+	        			<p class="writ_p1" style="font-size: 16px;font-weight: bold;">400-880-100</p>
+	        			<p class="writ_p2">工作日 09:00-18:00</p>
+	        		</div>
+	        	</div>
+	        </div>
+	    </div>
+        <div id="footerout">
+        	<div id="footer">
+        		<div id="footer_left">
+        			<div id="footer_left_code">
+        				<p>iPhone Android</p>
+        				<p style="margin-top: 5px;">客户端下载</p>
+        				<div id="twocode_out">
+        					
+        				
+        				    <div id="twocode">
+        					<div id="twocode_up">
+        						<div id="twocode_up1">
+        							
+        						</div>
+        						<div id="twocode_up_lera">
+        							
+        						</div>
+        						<div id="twocode_up2">
+        							
+        						</div>
+        					</div>
+        				    <div id="twocode_down">
+        				    	<span id="down1">下载iPhone版</span>
+        				    	<span id="down2">下载Android版</span>
+        				    	
+        				    </div>
+        				</div>
+        			    </div>
+        			</div>
+        		    <div id="footer_left_frid">
+        		    	<div class="frid1">
+        		    		<span>关于良仓&nbsp;&nbsp;</span><a>|</a>
+        		    		<span>&nbsp;&nbsp;服务协议&nbsp;&nbsp;</span><a>|</a>
+        		    		<span>&nbsp;&nbsp;隐私保护政策&nbsp;&nbsp;</span><a>|</a>
+        		    		<span>&nbsp;&nbsp;使用指南&nbsp;&nbsp;</span><a>|</a>
+        		    		<span>&nbsp;&nbsp;联系我们&nbsp;&nbsp;</span><a>|</a>
+        		    		<span>&nbsp;&nbsp;加入我们&nbsp;&nbsp;</span><a>|</a>
+        		    		<span>&nbsp;&nbsp;友情链接&nbsp;&nbsp;</span><a>|</a>
+        		    		<span>&nbsp;&nbsp;私信良仓</span>
+        		    	</div>
+        		    	<p> ©2013-2015 北京良仓文化传播有限公司版权所有 京备案 京公网安备11010502025627</p>
+        		    	<p>  &nbsp;&nbsp;&nbsp;&nbsp;公司名称：北京良仓文化传播有限公司  电话：010-58263516</p>
+        		    	<p>  &nbsp;&nbsp;&nbsp;&nbsp;公司地址：北京朝阳区百子湾路32号6号楼1层60号.</p>
+        		    	<p>  &nbsp;&nbsp;&nbsp;&nbsp;社会信用统一代码：91110105059231575L  食品许可证：JY11105160159557  </p>
+        		        <p>  &nbsp;&nbsp;&nbsp;&nbsp;图书证名称：中华人民共和国出版物经营许可证  图书证编号：新出发京零 字第 朝 150051 号  </p>
+        		    </div>
+        		</div>
+        		<div id="footer_right">
+        			<ul>
+        				<li class="footer_right_img1" >
+        					<div id="footer_right_codeout">
+		        				<div id="footer_right_code">
+		        				
+		        			    </div>
+        			        </div>
+        					
+        				</li>
+        				<li class="footer_right_img2" ></li>
+        				<li class="footer_right_img3" ></li>
+        				
+        			</ul>
+        			
+        			
+        		</div>
+        	</div>
+        </div>
+		<div id="backTop">
+        	<img src="img/回到顶部.png"/>
+        </div>
+	</body>
+	
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/chanpinye.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/backTop.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/chanpinye_lb.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/Bigbox.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$("#type2").click(function(){
+			$(this).addClass("type_img")
+			$("#type3").removeClass("type_img")
+			$("#type4").removeClass("type_img")
+			
+		})
+		$("#type3").click(function(){
+			$(this).addClass("type_img")
+			$("#type2").removeClass("type_img")
+			$("#type4").removeClass("type_img")
+		})
+		$("#type4").click(function(){
+			$("#type3").removeClass("type_img")
+			$("#type2").removeClass("type_img")
+			$(this).addClass("type_img")
+		})
+		var add = 1;
+		$("#add3").click(function(){
+			add++;
+			$("#add2").html(add)
+		})
+		$("#add1").click(function(){
+			add--;
+			if(add<=0){
+				add=0
+            }
+			$("#add2").html(add)
+		})
+//		var min_box = document.getElementById("min_box");
+//		var boxLeft = min_box.offsetLeft;
+//		var min_Bigbox = document.getElementById("min_Bigbox");
+////		min_Bigbox.style.marginLeft=
+//		min_Bigbox.offsetLeft = boxLeft+365+"px";
+//		 console.log(localStorage.use);
+    if(localStorage.code==0){
+    	var zc =document.getElementById("zc_href");
+    	var desc =document.getElementById("dese_href");
+    	zc.href="";
+    	desc.href=""
+    	$("#dengdubox").mousemove(function(){
+    		$(".li_2info").show();
+    	})
+    	$("#dengdubox").mouseleave(function(){
+    		$(".li_2info").hide();
+    	})
+    	$(".li_2").html(localStorage.use)
+    	$(".user_img").text("");
+    	var str = "<img src='http://imgs-qn.iliangcang.com/ware/userhead/mid/3/970/389/970389675.jpg?t=1495502167'>"
+        $(".user_img").append(str);
+       
+    }
+    $(".cover_tuichu").click(function(){
+    	if(localStorage.code==0){
+    		localStorage.clear();
+            self.location="index.html";
+
+    	}
+    })
+	</script>
+</html>

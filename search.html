@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<Link rel="shortcut icon" href="img/favicon.ico">
+		
+		<link rel="stylesheet" type="text/css" href="css/content.css"/>
+		<link rel="stylesheet" type="text/css" href="css/search.css"/>
+	</head>
+	<style type="text/css">* {
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+	list-style: none;
+
+}
+.fixed {
+	position: fixed;
+	width: 100%;
+	top: -56px;
+	z-index: 999;
+}
+
+#header {
+	width: 100%;
+	height: 105px;
+	background: white;
+}
+
+.header_top {
+	width: 100%;
+	height: 56px;
+	background: #25292e;
+}
+
+.wrap {
+	width: 1000px;
+	height: 56px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 109;
+}
+
+.wrap #wrap_logo {
+	float: left;
+	margin-top: 8px;
+	width: 95px;
+	height: 38px;
+	background: url(img/icon.png);
+	cursor: pointer;
+}
+
+.wrap #wrap_logo:hover {
+	opacity: 0.8;
+}
+
+.wrap_lite {
+	width: 300px;
+	height: 56px;
+	list-style: none;
+	float: right;
+}
+
+.wrap_lite li {
+	float: left;
+	line-height: 56px;
+}
+
+.li_1 {
+	color: #CCCCCC;
+	font-size: 14px;
+}
+
+.li_2 {
+	color: #CCCCCC;
+	font-size: 14px;
+	margin-left: 10px;
+}
+
+.li_3 {
+	width: 1px;
+	height: 8px;
+	margin-top: 25px;
+	background: #525961;
+	margin-left: 15px;
+}
+
+.li_4 {
+	text-align: center;
+	width: 66px;
+	height: 56px;
+	font-size: 12px;
+	color: #666;
+	cursor: pointer;
+}
+
+.li_5 {
+	width: 1px;
+	height: 8px;
+	margin-top: 25px;
+	background: #525961;
+}
+
+.li_6 {
+	cursor: pointer;
+	text-align: center;
+	width: 50px;
+	height: 56px;
+	font-size: 12px;
+	color: #666;
+}
+
+.li_8 {
+	margin-left: 15px;
+	font-size: 12px;
+	color: #666;
+	cursor: pointer;
+}
+
+.li_7 {
+	width: 1px;
+	height: 8px;
+	margin-top: 25px;
+	background: #525961;
+}
+
+#li_4_shop {
+	width: 300px;
+	background: #292F34;
+	position: absolute;
+	right: 0;
+	display: none;
+	color: #CCCCCC;
+	line-height: 70px;
+	text-align: center;
+	font-size: 14px;
+}
+
+#shopadd {
+	width: 300px;
+	height: 50px;
+	background: #7DBFDE;
+	position: absolute;
+	bottom: 0;
+	line-height: 50px;
+	text-align: center;
+	font-size: 14px;
+	color: white;
+	cursor: pointer;
+}
+
+#shopadd:hover {
+	background: #96C8E0;
+}
+
+.li_6info {
+	width: 210px;
+	height: 300px;
+	background: #292F34;
+	position: absolute;
+	right: 0;
+	display: none;
+}
+
+.li_6info li {
+	color: #CCCCCC;
+	width: 180px;
+	height: 49px;
+	margin-left: 15px;
+	list-style: none;
+	border-bottom: 1px solid #525961;
+	text-align: left;
+	cursor: pointer;
+}
+
+.li_6info li a {
+	float: right;
+}
+
+.li_6info .cover:hover {
+	background: #2E353D;
+}
+
+.cover {
+	width: 210px;
+	height: 49px;
+}
+
+.li_8:hover {
+	color: #CCCCCC;
+}
+
+#herder_tit {
+	width: 1000px;
+	height: 49px;
+	margin: 0 auto;
+	background: white;
+	border-bottom: 4px solid #ededed;
+}
+
+.header_title_f1 {
+	float: left;
+	width: 730px;
+	height: 53px;
+	color: #292F34;
+	font-size: 14px;
+}
+
+.header_title_f1 li {
+	list-style: none;
+	float: left;
+	width: 128px;
+	line-height: 50px;
+}
+
+.f1_title_1 {
+	margin-left: 30px;
+	text-align: center;
+}
+
+.header_title_f2 {
+	width: 1000px;
+	float: left;
+}
+
+.header_title_f2 li {
+	list-style: none;
+	width: 1000px;
+	position: absolute;
+	z-index: 100;
+	background: white;
+	display: none;
+	margin-top: -2px;
+}
+
+.f1_title {
+	border-bottom: 4px solid #292F34;
+}
+
+#f2_zazhi {
+	width: 1000px;
+	height: 80px;
+	background: white;
+	margin-top: 50px;
+	font-size: 14px;
+}
+
+#f2_zazhi div {
+	float: left;
+	list-style: none;
+	width: 100px;
+	height: 50px;
+	color: black;
+}
+
+.center_search {
+	float: right;
+	width: 260px;
+	height: 55px;
+	overflow: hidden;
+	position: relative;
+}
+
+.search {
+	width: 260px;
+	height: 49px;
+	position: absolute;
+	left: 280px;
+	border-bottom: 4px solid #292F34;
+}
+
+@keyframes ss {
+	20% {
+		margin-left: 10px;
+	}
+	40% {
+		margin-left: 0px;
+	}
+	60% {
+		margin-left: 10px;
+	}
+	80% {
+		margin-left: 0px;
+	}
+	100% {
+		margin-left: 10px;
+	}
+}
+
+#search_input {
+	position: absolute;
+	left: 4px;
+	top: 10px;
+	width: 188px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 4px;
+	outline: none;
+	border: 0;
+}
+
+#search_logo {
+	width: 50px;
+	height: 40px;
+	top: 5px;
+	position: absolute;
+	right: 0;
+	background: white;
+	background: url(img/icon.png)no-repeat -167px -145px;
+	cursor: pointer;
+	z-index: 10;
+}
+
+#f2_shop {
+	position: relative;
+	width: 1000px;
+	height: 460px;
+	background: white;
+	padding-top: 30px;
+}
+
+#f2_shop_logo {
+	width: 720px;
+	height: 230px;
+	float: left;
+}
+
+.f2_shop_logo_img {
+	cursor: pointer;
+	color: #4D4D4D;
+	width: 100px;
+	height: 80px;
+	font-size: 14px;
+	font-weight: bold;
+	float: left;
+}
+
+.f2_shop_logo_img img {
+	width: 40px;
+	height: 40px;
+}
+
+.f2_shop_logo_img p {
+	margin-top: -5px;
+	margin-left: 5px;
+}
+
+#f2_magazine {
+	float: left;
+	width: 230px;
+	height: 300px;
+}
+
+#f2_magazine_bck {
+	width: 240px;
+	height: 235px;
+	background: #EDEDED;
+}
+
+#f2_magazine_bck img {
+	width: 240px;
+	height: 235px;
+	cursor: pointer;
+}
+
+#f2_magazine p {
+	color: #4D4D4D;
+	font-size: 14px;
+	margin-top: 30px;
+}
+
+#f2_new {
+	width: 1000px;
+	height: 50px;
+	position: absolute;
+	bottom: 50px;
+	color: #4D4D4D;
+	font-size: 14px;
+}
+
+#f2_shop a {
+	cursor: pointer;
+}
+.s1{
+	clear: both;
+}
+#main_hint{
+	width: 1000px;
+	height: 100px;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	font-size: 14px;
+	color: #CCCCCC;
+	line-height: 100px;
+	display: none;
+}
+#main_hint a{
+	color: red;
+}
+.li_2info{
+			width: 190px;
+			height: 165px;
+			position: absolute;
+
+			top: 56px;
+			background: #292F34;
+			display: none;
+		}
+		.cover2{
+			width: 190px;
+			height:40px;
+		}
+		.li_2info li{
+			width: 160px;
+			height:40px;
+			margin-left: 15px;
+			list-style: none;
+			font-size: 12px;
+			color: #CCCCCC;
+			border-bottom: 1px solid #525961;
+			text-align: left;
+			cursor: pointer;
+			line-height: 40px;
+		}
+		.cover_tuichu{
+			width: 190px;
+			height:35px;
+			color: white;
+			line-height: 35px;
+			font-size: 14px;
+			margin-top: 10px;
+			text-align: center;
+		
+		   
+		
+			
+		}
+		
+		.li_2info .cover2:hover {
+			background: #2E353D;
+		}
+		.li_2info .cover_tuichu:hover {
+			background: #2E353D;
+		}
+		.user_img img{
+			width: 30px;
+			height: 30px;
+			margin-top: 14px;
+		}
+	</style>
+	<body>
+			<div id="header">
+			<div class="header_top">
+				<div class="wrap">
+					<div id="wrap_logo">
+						
+					</div>
+					<ul class="wrap_lite">
+						<div id="dengdubox">
+							
+						<li class="li_1"><div class="user_img"><a style="color: #ccc;text-decoration: none;" href="denglu.html" id="dese_href">登录</a></div>
+						<ul class="li_2info">
+						 	<div class="cover2">
+						 	<li>个人设置</li>	
+						 	</div>
+						 	<div class="cover2">
+						 	<li>收货信息</li>	
+						 	</div>
+						 	<div class="cover2">
+						 	<li style="border: 0;">我的订单</li>	
+						 	</div>
+						 	<div class="cover_tuichu">
+						 	     退出
+						 	</div>
+						 
+						 </ul>
+						
+						</li>
+						 
+						 <a href="zhuce.html" id="zc_href"><li class="li_2">注册</li></a>
+						</div>
+						<li class="li_3"></li>
+						<a class="ccc" href="shop.html"><li class="li_4">
+							购物车
+						<div id="li_4_shop">
+							你的购物车暂时没有商品
+							<div id="shopadd">
+								快去抢购良仓商品吧！
+							</div>
+						</div>
+						</li></a>
+						<li class="li_5"></li>
+						<li class="li_6">消息
+						 <ul class="li_6info">
+						 	<div class="cover">
+						 	<li>动态<a>0</a></li>
+						 	</div>
+						 	<div class="cover">
+						 	
+						 	<li>评论<a>0</a></li>
+						 	</div>
+						 	<div class="cover">
+						 	
+						 	<li>私信<a>0</a></li>
+						 	</div>
+						 	<div class="cover">
+						 	
+						 	<li>粉丝<a>0</a></li>
+						 	</div>
+						 	<div class="cover">
+						 	
+						 	<li>喜欢<a>0</a></li>
+						 	</div>
+						 	<div class="cover">
+						 	
+						 	<li>通知<a>0</a></li>
+						 	</div>
+						 </ul>
+						  
+						</li>
+						<li class="li_7"></li>
+						<li class="li_8">添加良品</li>
+					</ul>
+					
+				</div>
+			</div>
+		    <div id="herder_tit">
+		    	<ul class="header_title_f1">
+		    		<li><a style="color: black;text-decoration:none;" href="index.html">首页</li></a>
+		    		<li style="text-align: center;">商店</li>
+		    		<li class="f1_title_1">杂志</li>
+		    		<li class="f1_title_1">分享</li>
+		    		<li class="f1_title_1">达人</li>
+		    		
+		    	</ul>
+		        <div class="center_search">
+		        	<span id="search_logo">
+		         			
+		         	</span>
+		         	<div class="search">
+		         		
+		         		<input type="text" id="search_input" placeholder="search.." value="" />
+		         	</div>
+		        </div>
+		    	
+                <ul class="header_title_f2">
+		    		<li class="borderdesc"></li>
+		    		<li>
+		    			<div id="f2_shop">
+		    				<div id="f2_shop_logo">
+		    					<a><div class="f2_shop_logo_img">
+		    						<img src="img/23687.png"/>
+		    						<p>家居</p>
+		    					</div></a>
+		    					<a><div class="f2_shop_logo_img">
+		    						<img src="img/23686.png"/>
+		    						<p>家居</p>
+		    					</div></a>
+		    					<a><div class="f2_shop_logo_img">
+		    						<img src="img/23685.png"/>
+		    						<p>家具</p>
+		    					</div></a>
+		    					<a><div class="f2_shop_logo_img">
+		    						<img src="img/23684.png"/>
+		    						<p>文具</p>
+		    					</div></a>
+		    					<a><div class="f2_shop_logo_img">
+		    						<img src="img/23683.png"/>
+		    						<p>数码</p>
+		    					</div></a>
+		    					<a><div class="f2_shop_logo_img">
+		    						<img src="img/23682.png"/>
+		    						<p>玩乐</p>
+		    					</div></a>
+		    					<a><div class="f2_shop_logo_img">
+		    						<img src="img/23681.png"/>
+		    						<p>厨卫</p>
+		    					</div></a>
+		    					<a><div class="f2_shop_logo_img">
+		    						<img src="img/23680.png"/>
+		    						<p>美食</p>
+		    					</div></a>
+		    					<a><div class="f2_shop_logo_img">
+		    						<img src="img/23679.png"/>
+		    						<p>男装</p>
+		    					</div></a>
+		    					<a><div class="f2_shop_logo_img">
+		    						<img src="img/23678.png"/>
+		    						<p>女装</p>
+		    					</div></a>
+		    					<a><div class="f2_shop_logo_img">
+		    						<img src="img/23677.png"/>
+		    						<p>童装</p>
+		    					</div></a>
+		    					<a><div class="f2_shop_logo_img">
+		    						<img src="img/23676.png"/>
+		    						<p>鞋包</p>
+		    					</div></a>
+		    					<a><div class="f2_shop_logo_img">
+		    						<img src="img/23675.png"/>
+		    						<p>配饰</p>
+		    					</div></a>
+		    					<a><div class="f2_shop_logo_img">
+		    						<img src="img/23674.png"/>
+		    						<p>骑行</p>
+		    					</div></a>
+		    					<a><div class="f2_shop_logo_img">
+		    						<img src="img/23668.png"/>
+		    						<p>图书</p>
+		    					</div></a>
+		    					<a><div class="f2_shop_logo_img">
+		    						<img src="img/23672.png"/>
+		    						<p>艺术</p>
+		    					</div></a>
+		    					<a><div class="f2_shop_logo_img">
+		    						<img src="img/23671.png"/>
+		    						<p>盆栽</p>
+		    					</div></a>
+		    					<a><div class="f2_shop_logo_img">
+		    						<img src="img/23670.png"/>
+		    						<p>推荐</p>
+		    					</div></a>
+		    					<a><div class="f2_shop_logo_img">
+		    						<img src="img/23669.png"/>
+		    						<p>礼物</p>
+		    					</div></a>
+		    					
+		    					
+		    				</div>
+		    			    <div id="f2_magazine">
+		    				<div id="f2_magazine_bck">
+		    					<img title="新视线：  2015年7月刊" src="img/315574.jpg"/>
+		    				</div>
+		    				<p>
+		    					新视线：  2015年7月刊
+		    				</p>
+		    			</div>
+		    			    <div id="f2_new">
+			    			   	<a>查看所有品牌>></a>
+			    			    <a style="margin-left: 50px">最新到货>></a>
+		    			    </div>
+		    			    
+		    			    
+		    			</div>
+
+		    		</li>
+		    		<li>
+		    			<div id="f2_zazhi">
+		    				<a href=><div>童趣</div></a>
+		    				<a href=><div>数码</div></a>
+		    				<a href=><div>汽车</div></a>
+		    				<a href=><div>文化</div></a>
+		    				<a href=><div>时尚</div></a>
+		    				<a href=><div>美食</div></a>
+		    				<a href=><div>建筑</div></a>
+		    				<a href=><div>空间</div></a>
+		    				<a href=><div>圈子</div></a>
+		    				<a href=><div>清单</div></a>
+		    				<a href=><div>活动</div></a>
+		    				<a href=><div>视频</div></a>
+		    			</div>
+		    			
+		    		</li>
+		    		<li>
+		    			<div id="f2_zazhi">
+		    				<a href=><div>男士</div></a>
+		    				<a href=><div>家具</div></a>
+		    				<a href=><div>数码</div></a>
+		    				<a href=><div>工具</div></a>
+		    				<a href=><div>玩具</div></a>
+		    				<a href=><div>美容</div></a>
+		    				<a href=><div>孩子</div></a>
+		    				<a href=><div>宠物</div></a>
+		    				<a href=><div>饮食</div></a>
+		    				<a href=><div>运动</div></a>
+		    				<a href=><div>文化</div></a>
+		    				<a href=><div>女士</div></a>
+		    			</div>	
+		    			
+		    		</li>
+		    		<li class="borderdesc"></li>
+		    	</ul>
+
+		    </div>
+		</div>
+	        <div id="mainout">
+	        	<div id="main">
+	        		<div id="main_title">
+	        			良仓 &nbsp;<a id="aaa">搜索结果</a>
+	        		</div>
+	        		<div id="main_title2">
+	        			<div id="main_title2_one">
+	        				<div id="title2_one">
+	        					良品
+	        				</div>
+	        				<div id="title2_two">用户</div>
+	        			</div>
+	        			<div id="main_title2_two">
+	        				206 <a>34</a>
+	        			</div>
+	        		</div>
+	        	    <div id="main_hint">
+	        	    	对不起，没有你想要的东西~~~你可以试试  &nbsp;&nbsp;<a>辣条 、文具 、 男装</a>
+	        	    </div>
+	        	    <div id="search">
+	        
+	        	    </div>
+	        	</div>
+	        </div>
+	        <div id="service" style="margin-top: 50px;">
+	    	<div id="service_our">
+	    	    <div id="hand"></div>
+	    	    <div id="our"></div>
+	    	</div>
+	        <div id="service_fore">
+	        	<div class="fore1">
+	        		<div class="fore1_img">
+	        			
+	        		</div>
+	        		<div class="fore1_writ">
+	        			<p class="writ_p1">全球精品</p>
+	        			<p class="writ_p2">Global Selections</p>
+	        		</div>
+	        	</div>
+	        	<div class="fore1">
+	        		<div class="fore1_img"  style="background: url(img/icon.png) no-repeat -153px -217px;">
+	        			
+	        		</div>
+	        		<div class="fore1_writ">
+	        			<p class="writ_p1">正品保证</p>
+	        			<p class="writ_p2">Authenticity Guaranteed</p>
+	        		</div>
+	        	</div>
+	        	<div class="fore1">
+	        		<div class="fore1_img"  style="background: url(img/icon.png) no-repeat -57px -353px;">
+	        			
+	        		</div>
+	        		<div class="fore1_writ">
+	        			<p class="writ_p1">全场包邮</p>
+	        			<p class="writ_p2">Free Delivery</p>
+	        		</div>
+	        	</div>
+	        	<div class="fore1">
+	        		<div class="fore1_img" style="background: url(img/icon.png) no-repeat -114px -353px;">
+	        			
+	        		</div>
+	        		<div class="fore1_writ">
+	        			<p class="writ_p1" style="font-size: 16px;font-weight: bold;">400-880-100</p>
+	        			<p class="writ_p2">工作日 09:00-18:00</p>
+	        		</div>
+	        	</div>
+	        </div>
+	    </div>
+        <div id="footerout">
+        	<div id="footer">
+        		<div id="footer_left">
+        			<div id="footer_left_code">
+        				<p>iPhone Android</p>
+        				<p style="margin-top: 5px;">客户端下载</p>
+        				<div id="twocode_out">
+        					
+        				
+        				    <div id="twocode">
+        					<div id="twocode_up">
+        						<div id="twocode_up1">
+        							
+        						</div>
+        						<div id="twocode_up_lera">
+        							
+        						</div>
+        						<div id="twocode_up2">
+        							
+        						</div>
+        					</div>
+        				    <div id="twocode_down">
+        				    	<span id="down1">下载iPhone版</span>
+        				    	<span id="down2">下载Android版</span>
+        				    	
+        				    </div>
+        				</div>
+        			    </div>
+        			</div>
+        		    <div id="footer_left_frid">
+        		    	<div class="frid1">
+        		    		<span>关于良仓&nbsp;&nbsp;</span><a>|</a>
+        		    		<span>&nbsp;&nbsp;服务协议&nbsp;&nbsp;</span><a>|</a>
+        		    		<span>&nbsp;&nbsp;隐私保护政策&nbsp;&nbsp;</span><a>|</a>
+        		    		<span>&nbsp;&nbsp;使用指南&nbsp;&nbsp;</span><a>|</a>
+        		    		<span>&nbsp;&nbsp;联系我们&nbsp;&nbsp;</span><a>|</a>
+        		    		<span>&nbsp;&nbsp;加入我们&nbsp;&nbsp;</span><a>|</a>
+        		    		<span>&nbsp;&nbsp;友情链接&nbsp;&nbsp;</span><a>|</a>
+        		    		<span>&nbsp;&nbsp;私信良仓</span>
+        		    	</div>
+        		    	<p> ©2013-2015 北京良仓文化传播有限公司版权所有 京备案 京公网安备11010502025627</p>
+        		    	<p>  &nbsp;&nbsp;&nbsp;&nbsp;公司名称：北京良仓文化传播有限公司  电话：010-58263516</p>
+        		    	<p>  &nbsp;&nbsp;&nbsp;&nbsp;公司地址：北京朝阳区百子湾路32号6号楼1层60号.</p>
+        		    	<p>  &nbsp;&nbsp;&nbsp;&nbsp;社会信用统一代码：91110105059231575L  食品许可证：JY11105160159557  </p>
+        		        <p>  &nbsp;&nbsp;&nbsp;&nbsp;图书证名称：中华人民共和国出版物经营许可证  图书证编号：新出发京零 字第 朝 150051 号  </p>
+        		    </div>
+        		</div>
+        		<div id="footer_right">
+        			<ul>
+        				<li class="footer_right_img1" >
+        					<div id="footer_right_codeout">
+		        				<div id="footer_right_code">
+		        				
+		        			    </div>
+        			        </div>
+        					
+        				</li>
+        				<li class="footer_right_img2" ></li>
+        				<li class="footer_right_img3" ></li>
+        				
+        			</ul>
+        			
+        			
+        		</div>
+        	</div>
+        </div>
+		<div id="backTop">
+        	<img src="img/回到顶部.png"/>
+        </div>
+	</body>
+
+    <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/search.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/underscore.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/backTop.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/template" id="templete">
+		 <div class = "shop_cart">
+			 <div class = "shop_cartLeft">
+			   <img src="<%= goods_thumb%>">
+			 </div>
+			 <div class = "shop_cartRight">
+			   <p><%=goods_name%></p>
+			   <p>数量:<%=goods_number%></p>
+			   <p>￥<%=goods_price%></p>
+			 </div>
+		</div>
+	</script>
+	<script type="text/template" id="templete_search">
+     
+	    	<div class="search_box">
+	        	    		<div class="search_box1">
+	        	    			<div class="box1_img">
+	        	    				<img src="http://imgs-qn.iliangcang.com/ware/brand/701.jpg?t=1492767540"/>
+	        	    			</div>
+	        	    			<div class="box1_writ">
+	        	    				CORKCICLE   <span style="margin-left: 43px;font-weight: bold;">1764 &nbsp;</span><a style="font-size: 24px;">❤</a>
+	        	    			</div>
+	        	    		</div>
+	        	    		<a href="cp.html?<%=goods_id%>"><div class="search_box2">
+	        	    			<img src="<%=goods_thumb%>">
+	        	    			
+	        	    			<div class="box2-shop">
+	        	    				
+	        	    			</div>
+	        	    			<div class="search_box_cover">
+	        	    				
+	        	    				<div class="cover1">
+	        	    					
+	        	    				</div>
+	        	    			</div>
+	        	    			<div class="search_box_writ">
+	        	    				<div class="writ1">
+	        	    					￥<%=price%>
+	        	    					<div class="writ_img" style="float:right;width: 34px;height: 34px;background: url(img/icon_car.png) no-repeat;margin-top: 8px;">
+
+	        	    						
+	        	    					</div>
+
+	        	    				</div>
+	        	    				<div class="writ2">
+
+	        	    					<%=goods_desc%>
+	        	    				</div>
+
+	        	    			</div>
+	        	    		</div>
+	        	    		</a>
+	        	    	</div>
+	    
+	</script>
+	
+	<script type="text/javascript">
+					$.ajax({
+		        	type:"get",
+					url:"http://lc.shudong.wang/api_goods.php",
+					data:{"search_text":localStorage.searchValue},
+                    success:function(data){
+		            	data = JSON.parse(data)
+		            	
+		            	console.log(data.code)
+		            	var obj = data.data;
+					    $.each(obj,function(index,value) {
+						var herr = tearr(value);
+						var $domObj = $(herr);
+
+						$("#search").append($domObj);
+						
+
+
+						
+						$(".search_box").each(function(index){
+						var left = 20;
+						var index = $(this).index();
+						for (var i = index; i >= 0; i-=4) {
+							$(this).css({
+								"left":i*left,
+							
+							})
+						}
+					})
+				});
+		            
+		                var sh = document.getElementById("search")
+						var s1 = document.createElement("div");
+				        s1.className="s1"
+						sh.append(s1);
+		            }
+                        
+					})
+	   $.each($("#f2_shop_logo a"),function(index){
+        	$("#f2_shop_logo a").eq(index).attr("href","fenlei.html?"+index)
+        })
+	   var templeteStr = $("#templete_search").html();
+	   var tearr = _.template(templeteStr);
+	   var flag = true;
+	   $("#search_logo").click(function(){
+			if(flag==false){
+				flag=true;
+				if($("#search_input").val()!=""){
+					return
+				}
+				$(".search").animate({left:"280px"},300,function(){
+					$(".search").css({
+					"animation": "",
+				})
+				});
+			}else{
+				flag=false;
+				$(".search").animate({left:"0px"},300,function(){
+					$(".search").css({
+					"animation": "0.1s  linear ss",
+				})
+				});
+			}
+			
+		   
+		})
+
+	   
+		$("#search_logo").click(function(){
+			$("#main_hint").hide();
+			var aaa =document.getElementById("aaa");
+			var str = document.getElementById("search_input").value;
+			aaa.innerHTML  ="搜索结果>"+str ;
+              
+			    var search = $("#search_input").val();
+				if($("#search_input").val()==""){
+					return;
+				}else{
+					$.ajax({
+		        	type:"get",
+					url:"http://lc.shudong.wang/api_goods.php",
+					data:{"search_text":search},
+		            success:function(data){
+		            	data = JSON.parse(data) 
+		            	console.log(data)
+		            	if(data.code==1){
+		                  $("#main_hint").show();
+		            	}
+		            	var obj = data.data;
+					    $.each(obj,function(index,value) {
+						var herr = tearr(value);
+						var $domObj = $(herr);
+
+						$("#search").append($domObj);
+						
+
+
+						
+						$(".search_box").each(function(index){
+						var left = 20;
+						var index = $(this).index();
+						for (var i = index; i >= 0; i-=4) {
+							$(this).css({
+								"left":i*left,
+							
+							})
+						}
+					})
+				});
+		            
+		                var sh = document.getElementById("search")
+						var s1 = document.createElement("div");
+				        s1.className="s1"
+						sh.append(s1);
+		            }
+                        
+					})
+					
+				}
+				$(".search_box").remove();
+				$(".s1").remove()
+				
+	})
+                        
+		console.log(localStorage.use);
+    if(localStorage.code==0){
+    	var zc =document.getElementById("zc_href");
+    	var desc =document.getElementById("dese_href");
+    	zc.href="";
+    	desc.href=""
+    	$("#dengdubox").mousemove(function(){
+    		$(".li_2info").show();
+    	})
+    	$("#dengdubox").mouseleave(function(){
+    		$(".li_2info").hide();
+    	})
+    	$(".li_2").html(localStorage.use)
+    	$(".user_img").text("");
+    	var str = "<img src='http://imgs-qn.iliangcang.com/ware/userhead/mid/3/970/389/970389675.jpg?t=1495502167'>"
+        $(".user_img").append(str);
+       
+    }
+    $(".cover_tuichu").click(function(){
+    	if(localStorage.code==0){
+    		localStorage.clear();
+            self.location="index.html";
+
+    	}
+    })
+   if(localStorage.code==0){
+   	var templeteStr = $("#templete").html();
+    var tempStr =_.template(templeteStr);	
+		$.ajax({
+			type:"get",
+			url:"http://lc.shudong.wang/api_cart.php",
+//		    data:{data},
+		    beforeSend:function(request) {
+	            request.setRequestHeader("token",localStorage.token);
+		    console.log(localStorage.token)
+	            
+	        },
+		    success:function(data){
+		    	data = JSON.parse(data)
+		    	var obj=data.data;
+		    	$.each(obj, function(index,value) {
+					var heroStr = tempStr(value);
+					var $domObj = $(heroStr);
+					$("#li_4_shop").prepend($domObj);
+				});
+
+				
+		    }
+		})
+    }
+	</script>
+
+	
+</html>

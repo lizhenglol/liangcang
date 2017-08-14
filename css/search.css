@@ -1,0 +1,179 @@
+#mainout{
+	width: 100%;
+	padding-top: 30px;
+	
+}
+#main{
+	width: 1000px;
+    margin: 0 auto;
+	
+}
+#main_title{
+	width: 1000px;
+	height: 35px;
+	
+	font-size: 13px;
+}
+#main_title a{
+	color: #CCCCCC;
+}
+#main_title2{
+	width: 1000px;
+	height: 55px;
+}
+#main_title2_one{
+	width: 1000px;
+	height: 30px;
+	border-bottom:  1px solid #CCCCCC;
+
+	
+}
+#title2_one{
+	float: left;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 22px;
+	font-size: 15px;
+	background:url(../img/arrow_top_o.png) no-repeat bottom center;
+	
+}
+#title2_two{
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 22px;
+	font-size: 15px;
+	float: left;
+	margin-left: 30px;
+}
+
+#main_title2_two{
+	width: 1000px;
+	height: 30px;
+	line-height: 30px;
+	
+}
+#main_title2_two a{
+	margin-left: 30px;
+}
+
+#search{
+	width: 1000px;
+	
+	margin: 0 auto;
+	padding-top: 30px;
+
+
+}
+.search_box{
+	width: 235px;
+	height: 280px;
+	float: left;
+	position: relative;
+
+}
+.search_box1{
+	width: 235px;
+	height: 34px;
+}
+.box1_img{
+	width: 34px;
+	height: 34px;
+	float: left;
+}
+.box1_img img{
+	float: left;
+	width: 34px;
+	height: 34px;
+}
+.search_box2 img{
+	width: 235px;
+	height: 235px;
+}
+.box1_writ{
+
+	width: 200px;
+	height: 34px;
+	float: left;
+	background:url(../img/block_bg_gray_200.png) no-repeat;
+	line-height: 34px;
+	color: #333;
+	font-size: 12px;
+	text-indent: 10px;
+}
+.box1_writ a{
+	float: right;
+	margin-right: 10px;
+
+}
+.search_box2{
+	margin-top: 5px;
+	width: 235px;
+	height: 235px;
+   cursor: pointer;
+	position:relative;
+}
+.box2-shop{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	right:5px ;
+	top: 5px;
+	background: url(../img/icon_car_black.png);
+}
+.search_box3{
+	width: 235px;
+	height: 34px;
+}
+.search_box_cover{
+	display: none;
+	width: 235px;
+	height: 235px;
+	position: absolute;
+	top: 0;
+	background: #666666;
+	opacity: 0.5;
+
+}
+.cover1{
+	position: absolute;
+	top: 0;
+	width: 235px;
+	height: 35px;
+	background: black;
+}
+.search_box_writ{
+	display: none;
+    
+	top: 0;
+	width: 235px;
+	height: 235px;
+	position: absolute;
+
+	
+}
+.writ1{
+	width: 235px;
+	height: 35px;
+	line-height: 35px;
+	color: #FFFFFF;
+	font-size: 20px;
+}
+.writ2{
+	
+	width: 195px;
+	height: 140px;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 14px;
+	margin-left: 20px;
+	margin-top: 30px;
+	
+}
+.search_box2:hover .search_box_cover{
+	display: block;
+}
+.search_box2:hover .search_box_writ{
+	display: block;
+}
